@@ -4,7 +4,7 @@ import { AppDispatch, RootState } from "../utils/redux/store";
 import { IoIosArrowBack } from "react-icons/io";
 import { Star } from "../helpers/rarity";
 import * as Lodader from "../components/Loader";
-import More from "./More";
+import * as Button from "./Button";
 import {
   charactersThunks,
   charactersBySlugThunks,
@@ -77,7 +77,7 @@ const Card: React.FC = () => {
           ))}
         </ul>
       )}
-      <More />
+      <Button.More />
     </>
   );
 };
